@@ -1,7 +1,7 @@
-export default function Navlink(props) {
+export default function Navlink({ text }) {
   return (
     <li>
-      <a href=''>{props.text}</a>
+      <a href=''>{text}</a>
     </li>
   );
 }

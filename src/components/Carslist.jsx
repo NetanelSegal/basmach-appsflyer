@@ -87,7 +87,11 @@ export default function Carslist() {
   return (
     <section>
       <h2>Cars list</h2>
-      <CarCard />
+      <div className='cars-list'>
+        <CarCard car={cars[0]} />
+        <CarCard car={cars[1]} />
+        <CarCard car={cars[2]} />
+      </div>
     </section>
   );
 }
