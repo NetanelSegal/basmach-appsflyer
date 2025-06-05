@@ -3,6 +3,8 @@
 
 import Navlink from './Navlink';
 
+const links = ['Home', 'About', 'Contact', 'Another'];
+
 export default function Navbar() {
   return (
     <nav>
@@ -13,11 +15,9 @@ export default function Navbar() {
         ></path>
       </svg>
       <ul>
-        <Navlink text='Home' />
-        <Navlink text='About' />
-        <Navlink text='Contact' />
-        <Navlink text='Pricing' />
-        <Navlink text='Blog' />
+        {links.map((text) => (
+          <Navlink text={text} />
+        ))}
       </ul>
     </nav>
   );

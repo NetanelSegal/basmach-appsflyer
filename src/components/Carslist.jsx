@@ -90,9 +90,9 @@ export default function Carslist() {
     <section className='cars-list-section'>
       <h2>Cars list</h2>
       <div className='cars-list'>
-        {cars.map((car, i) => {
-          return <CarCard car={car} index={i + 1} />;
-        })}
+        {cars.map((car, i) => (
+          <CarCard car={car} index={i + 1} />
+        ))}
       </div>
     </section>
   );
