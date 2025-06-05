@@ -85,7 +85,7 @@ const cars = [
 
 export default function Carslist() {
   return (
-    <section>
+    <section className='cars-list-section'>
       <h2>Cars list</h2>
       <div className='cars-list'>
         <CarCard car={cars[0]} />
