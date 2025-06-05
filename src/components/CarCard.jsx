@@ -5,7 +5,7 @@ export default function CarCard({ car, index }) {
       <img src={car.image} alt='' />
       <h4>{car.name}</h4>
       <p>{car.description}</p>
-      <button>Add to cart ${car.price}</button>
+      <button className='btn'>Add to cart ${car.price}</button>
     </div>
   );
 }
