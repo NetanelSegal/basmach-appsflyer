@@ -62,7 +62,7 @@ nav {
     height: 200px;
     background-color: gray;
     border-radius: 8px;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   button {
