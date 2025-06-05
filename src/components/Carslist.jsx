@@ -84,13 +84,15 @@ const cars = [
 ];
 
 export default function Carslist() {
+  // cars - car object array
+
   return (
     <section className='cars-list-section'>
       <h2>Cars list</h2>
       <div className='cars-list'>
-        <CarCard car={cars[0]} />
-        <CarCard car={cars[1]} />
-        <CarCard car={cars[2]} />
+        {cars.map((car, i) => {
+          return <CarCard car={car} index={i + 1} />;
+        })}
       </div>
     </section>
   );
