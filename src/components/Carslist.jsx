@@ -1,4 +1,5 @@
 import CarCard from './CarCard';
+import CarForm from './CarForm';
 
 const cars = [
   {
@@ -84,8 +85,6 @@ const cars = [
 ];
 
 export default function Carslist() {
-  // cars - car object array
-
   return (
     <section className='cars-list-section'>
       <h2>Cars list</h2>
@@ -94,6 +93,7 @@ export default function Carslist() {
           <CarCard car={car} index={i + 1} />
         ))}
       </div>
+      <CarForm />
     </section>
   );
 }

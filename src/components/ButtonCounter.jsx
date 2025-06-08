@@ -5,7 +5,7 @@ export default function ButtonCounter() {
 
   return (
     <button
-      onClick={() => {
+      onClick={(e) => {
         setCount((prev) => prev + 1);
       }}
       className='btn'
