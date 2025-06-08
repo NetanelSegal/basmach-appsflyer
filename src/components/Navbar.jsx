@@ -15,8 +15,8 @@ export default function Navbar() {
         ></path>
       </svg>
       <ul>
-        {links.map((text) => (
-          <Navlink text={text} />
+        {links.map((title) => (
+          <Navlink text={title} />
         ))}
       </ul>
     </nav>

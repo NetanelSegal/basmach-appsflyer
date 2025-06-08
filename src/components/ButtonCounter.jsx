@@ -6,7 +6,7 @@ export default function ButtonCounter() {
   return (
     <button
       onClick={() => {
-        setCount(count + 1);
+        setCount((prev) => prev + 1);
       }}
       className='btn'
     >

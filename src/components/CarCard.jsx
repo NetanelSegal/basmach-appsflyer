@@ -1,3 +1,5 @@
+import ButtonCounter from './ButtonCounter';
+
 export default function CarCard({ car, index }) {
   return (
     <div className='car-card'>
@@ -6,6 +8,7 @@ export default function CarCard({ car, index }) {
       <h4>{car.name}</h4>
       <p>{car.description}</p>
       <button className='btn'>Add to cart ${car.price}</button>
+      <ButtonCounter />
     </div>
   );
 }
